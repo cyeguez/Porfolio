@@ -1,6 +1,8 @@
-//* Paleta de colores
-$color-background: #1e2326;
-$color-green-resalt: #1cb698;
+@forward '../scss/component/header.scss';
+@use './utils/function';
+
+
+
 
 * {
   margin: 0;
@@ -13,29 +15,4 @@ html {
   font-family: "Work Sans", sans-serif;
 }
 
-header {
-  width: 100%;
-  height: 60px;
-  background-color: $color-background;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 20px;
-  line-height: 60px;
-  .logo {
-    a {
-      text-decoration: none;
-      font-size: 3rem;
-      color: $color-green-resalt;
-      font-weight: bold;
-    }
-    :hover {
-      transition-duration: 0.5s;
-      color: white;
-      font-size: 3.2rem;
-    }
-  }
-  .nav {
-    display: none;
-  }
-}
+

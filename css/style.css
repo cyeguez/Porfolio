@@ -1,14 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Work Sans", sans-serif;
-}
-
 header {
   width: 100%;
   height: 60px;
@@ -18,6 +7,7 @@ header {
   align-items: center;
   padding-inline: 20px;
   line-height: 60px;
+  position: relative;
 }
 header .logo a {
   text-decoration: none;
@@ -30,6 +20,78 @@ header .logo :hover {
   color: white;
   font-size: 3.2rem;
 }
+header #menu {
+  color: white;
+  font-size: 30px;
+  transition-duration: 0.3s;
+}
+header .info .container-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: 5rem;
+  left: 35%;
+  border: none;
+}
+header .info .container-picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-position: center;
+     object-position: center;
+}
+header .info .info-user {
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  padding-top: 16rem;
+}
 header .nav {
-  display: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  transition-duration: 0.5s;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  border-radius: 1rem;
+  background-color: lightblue;
+}
+header .nav .nav-link {
+  position: absolute;
+  top: 25rem;
+  list-style: none;
+}
+header .nav .nav-link a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.mostrar {
+  opacity: 0;
+  cursor: none;
+  transition-duration: 0.5s;
+}
+
+.rotate {
+  transition-duration: 0.5s;
+  transform: rotate(90deg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */

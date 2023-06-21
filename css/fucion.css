@@ -1,0 +1,10 @@
+.mostrar {
+  opacity: 0;
+  cursor: none;
+  transition-duration: 0.5s;
+}
+
+.rotate {
+  transition-duration: 0.5s;
+  transform: rotate(90deg);
+}/*# sourceMappingURL=fucion.css.map */
