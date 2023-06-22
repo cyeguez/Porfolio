@@ -1,7 +1,8 @@
 .mostrar {
   opacity: 0;
-  cursor: none;
+  pointer-events: none;
   transition-duration: 0.5s;
+  
 }
 
 .rotate {
