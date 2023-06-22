@@ -56,7 +56,7 @@ header {
       padding-top: 2rem;
       color: c.$text-primary;
       span {
-        font-size: medium;
+        font-size: 1.5rem;
         color: c.$quaternary;
       }
     }
@@ -75,19 +75,36 @@ header {
     background-color: c.$secondary;
 
     .nav-link {
+      width: fit-content;
       display: flex;
       justify-content: center;
       flex-direction: column;
       position: absolute;
       top: 35%;
       list-style: none;
-      a {
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 2.5rem;
-        padding: 1rem;
-        color: c.$text-primary;
+      cursor: pointer;
+      li {
+        &:hover{
+          transition-duration: 0.5s;
+          background-color: c.$quaternary;
+          
+        }
+
+        &>a:hover{
+          color: c.$primary;
+        }
+
+       
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          font-size: 2rem;
+          padding: 1rem;
+          color: c.$text-primary;
+          font-weight: 500;
+        }
       }
+
     }
     .contenedor-close {
       width: 50px;
@@ -107,10 +124,4 @@ header {
       }
     }
   }
-}
-
-// modo desktop
-
-@media screen and (min-width: 600px) {
-  
 }
