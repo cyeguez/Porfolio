@@ -1,4 +1,5 @@
-header {
+@charset "UTF-8";
+ß header {
   width: 100%;
   height: 60px;
   background-color: #33616b;
@@ -9,37 +10,37 @@ header {
   line-height: 60px;
   position: relative;
 }
-header .logo a {
+ß header .logo a {
   text-decoration: none;
   font-size: 3rem;
   color: #ffffff;
   font-weight: bold;
 }
-header .logo :hover {
+ß header .logo :hover {
   transition-duration: 0.5s;
   color: #2c6969;
   font-size: 3.2rem;
 }
-header #menu {
+ß header #menu {
   color: #e7e2c6;
   font-size: 30px;
   transition-duration: 0.3s;
 }
-header .info {
+ß header .info {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 60px;
   align-items: center;
 }
-header .info .container-picture {
+ß header .info .container-picture {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: #e7e2c6;
   border: none;
 }
-header .info .container-picture img {
+ß header .info .container-picture img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -48,18 +49,18 @@ header .info .container-picture img {
   -o-object-position: center;
      object-position: center;
 }
-header .info .info-user {
+ß header .info .info-user {
   text-align: center;
   line-height: 2rem;
   font-size: 2rem;
   padding-top: 2rem;
   color: #ffffff;
 }
-header .info .info-user span {
+ß header .info .info-user span {
   font-size: 1.5rem;
   color: #e7e2c6;
 }
-header .nav {
+ß header .nav {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -71,7 +72,7 @@ header .nav {
   border-radius: 0.5rem;
   background-color: #2c6969;
 }
-header .nav .nav-link {
+ß header .nav .nav-link {
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -82,11 +83,14 @@ header .nav .nav-link {
   list-style: none;
   cursor: pointer;
 }
-header .nav .nav-link li > a:hover {
-  color: pink;
+ß header .nav .nav-link li:hover {
+  transition-duration: 0.5s;
+  background-color: #e7e2c6;
 }
-header .nav .nav-link li a {
-  position: relative;
+ß header .nav .nav-link li > a:hover {
+  color: red;
+}
+ß header .nav .nav-link li a {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 2rem;
@@ -94,19 +98,7 @@ header .nav .nav-link li a {
   color: #ffffff;
   font-weight: 500;
 }
-header .nav .nav-link li a::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 5px;
-  background-color: red;
-  opacity: 0;
-}
-header .nav .nav-link li a:hover::before, header .nav .nav-link li a.selected::before {
-  opacity: 1;
-}
-header .nav .contenedor-close {
+ß header .nav .contenedor-close {
   width: 50px;
   height: 50px;
   display: flex;
@@ -117,7 +109,7 @@ header .nav .contenedor-close {
   position: absolute;
   bottom: 30px;
 }
-header .nav .contenedor-close #close-icon {
+ß header .nav .contenedor-close #close-icon {
   font-size: 50px;
   font-weight: 500;
   color: lightgoldenrodyellow;
