@@ -1,19 +1,11 @@
-@forward '../scss/component/header.scss';
-@forward '../scss/responsive/desktop';
+@forward '../scss/style-general/styele-general.scss';
 @use './utils/function';
+@forward '../scss/component/header.scss';
+@forward '../scss/component/main.scss';
+@forward '../scss/responsive/desktop';
 
 
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Work Sans", sans-serif;
-}
 
 

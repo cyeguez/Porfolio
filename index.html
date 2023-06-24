@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>César Yeguez</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <a href="#">César</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>César Yeguez</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="#">César</a>
+    </div>
+    <span class="material-symbols-outlined" id="menu"> menu </span>
+
+    <nav class="nav mostrar">
+      <div class="info">
+        <div class="container-picture">
+          <img src="./asset/img/cesar.jpg" alt="Fotografía de César" />
+        </div>
+        <p class="info-user">
+          César Yeguez <br />
+          <span>cesar.yeguez@gmail.com</span>
+        </p>
       </div>
-      <span class="material-symbols-outlined" id="menu"> menu </span>
+      <ul class="nav-link">
+        <li><a href="#inicio" class="selected">inicio</a></li>
+        <li><a href="#sobre-mi">sobre mi</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#curriculum">curriculum</a></li>
+        <li><a href="#porfolio">porfolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="contenedor-close">
+        <span class="material-symbols-outlined" id="close-icon"> close </span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio" class="slide">
+      <div class="container-inicio">
+        <img src="./asset/img/cesar-inicio.jpeg" alt="Fotograía de cesar">
 
-      <nav class="nav mostrar">
-        <div class="info">
-          <div class="container-picture">
-            <img src="./asset/img/cesar.jpg" alt="Fotografía de César" />
-          </div>
-          <p class="info-user">
-            César Yeguez <br />
-            <span>cesar.yeguez@gmail.com</span>
-          </p>
+        <h1>Soy Cesar <span>Yeguez</span></h1>
+        <h2><span class="typed"></span></h2>
+
+        <div class="" id="cadenas-texto">
+           <p><i class="profesion"> Soy Técnologo en Sistemas Industriales</i></p>
+            <p><i class="profesion">Soy Desarrollador web Junior</i></p>
+            <p><i class="profesion">Soy Estudiante de programación</i></p>
         </div>
-        <ul class="nav-link">
-          <li><a href="" class="selected">inicio</a></li>
-          <li><a href="">sobre mi</a></li>
-          <li><a href="">Skill</a></li>
-          <li><a href="">curriculum</a></li>
-          <li><a href="">porfolio</a></li>
-          <li><a href="">Contacto</a></li>
-        </ul>
-        <div class="contenedor-close">
-          <span class="material-symbols-outlined" id="close-icon"> close </span>
-        </div>
-      </nav>
-    </header>
+      </div>
+    </section>
+    <section id="sobre-mi" class="slide">
+      <h2>sobre mi</h2>
+    </section>
+    <section id="skill" class="slide">
+      <h2>skill</h2>
+    </section>
+    <section id="curriculum" class="slide">
+      <h2>curriculum</h2>
+    </section>
+    <section id="porfolio" class="slide">
+      <h2>porfolio</h2>
+    </section>
+    <section id="contacto" class="slide">
+      <h2>contacto</h2>
+    </section>
 
+  </main>
 
-    <script src="js/main.js"></script>
-  </body>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

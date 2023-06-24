@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.mostrar {
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: 0.5s;
+}
+
+.rotate {
+  transition-duration: 0.5s;
+  transform: rotate(90deg);
+}
+
 header {
   width: 100%;
   height: 60px;
@@ -7,7 +30,8 @@ header {
   align-items: center;
   padding-inline: 20px;
   line-height: 60px;
-  position: relative;
+  position: fixed;
+  z-index: 1;
 }
 header .logo a {
   text-decoration: none;
@@ -54,6 +78,7 @@ header .info .info-user {
   font-size: 2rem;
   padding-top: 2rem;
   color: #ffffff;
+  margin-bottom: 2rem;
 }
 header .info .info-user span {
   font-size: 1.5rem;
@@ -63,7 +88,7 @@ header .nav {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   transition-duration: 0.5s;
   position: absolute;
   top: 0;
@@ -75,6 +100,7 @@ header .nav .nav-link {
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
+  line-height: 5rem;
   justify-content: center;
   flex-direction: column;
   position: absolute;
@@ -83,7 +109,7 @@ header .nav .nav-link {
   cursor: pointer;
 }
 header .nav .nav-link li > a:hover {
-  color: pink;
+  color: #f6d6ac;
 }
 header .nav .nav-link li a {
   position: relative;
@@ -94,45 +120,98 @@ header .nav .nav-link li a {
   color: #ffffff;
   font-weight: 500;
 }
-header .nav .nav-link li a::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 5px;
-  background-color: red;
-  opacity: 0;
-}
-header .nav .nav-link li a:hover::before, header .nav .nav-link li a.selected::before {
-  opacity: 1;
-}
 header .nav .contenedor-close {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  margin-block: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 5px solid #ffffff;
   border-radius: 50%;
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
 }
 header .nav .contenedor-close #close-icon {
-  font-size: 50px;
-  font-weight: 500;
-  color: lightgoldenrodyellow;
+  font-size: 30px;
+  font-weight: 400;
+  color: #e7e2c6;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+main .slide {
+  width: 100%;
+  height: 100vh;
+  background-color: pink;
+}
+main #inicio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #000;
+}
+main #inicio::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../asset/img/paisaje.jpg);
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+}
+main #inicio .container-inicio {
+  width: 100%;
+  display: flex;
+  isolation: isolate;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #inicio .container-inicio img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right top;
+     object-position: right top;
+}
+main #inicio .container-inicio h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+main #inicio .container-inicio h1 span {
+  color: #2c6969;
+}
+main #inicio .container-inicio h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+main #inicio .container-inicio .profesion {
+  color: #f6d6ac;
+  font-style: normal;
 }
 
 @media screen and (min-width: 600px) {
   header {
     width: 10%;
-    height: 100vh;
+    height: -moz-fit-content;
+    height: fit-content;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     line-height: 60px;
-    position: sticky;
   }
   header .logo {
     display: none;
@@ -194,28 +273,19 @@ header .nav .contenedor-close #close-icon {
     padding-right: 20px;
     color: #ffffff;
   }
+  header .nav .nav-link a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #c4d4af;
+    opacity: 0;
+  }
+  header .nav .nav-link a:hover::before, header .nav .nav-link a.selected::before {
+    opacity: 1;
+  }
   header .nav .contenedor-close {
     display: none;
   }
-}
-.mostrar {
-  opacity: 0;
-  pointer-events: none;
-  transition-duration: 0.5s;
-}
-
-.rotate {
-  transition-duration: 0.5s;
-  transform: rotate(90deg);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Work Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */

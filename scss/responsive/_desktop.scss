@@ -4,13 +4,13 @@
 @media screen and (min-width: 600px) {
   header {
     width: 10%;
-    height: 100vh;
+    height: fit-content;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     line-height: 60px;
-    position: sticky;
+  
     .logo {
       display: none;
     }
@@ -74,6 +74,25 @@
           padding-left: 20px;
           padding-right: 20px;
           color: c.$text-primary;
+
+          &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 5px;
+            background-color: c.$tertiary;
+            opacity: 0;
+            
+            
+            
+          }
+          
+          &:hover::before,
+          &.selected::before{
+            opacity: 1;
+          }
+          
         }
       }
       .contenedor-close {
