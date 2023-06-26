@@ -1,103 +1,37 @@
-@use "../var/colors" as c;
-// modo desktop
+@use "../var/colors.scss" as c;
+@media screen and (min-width: 900px) {
+  main {
+    #inicio {
+      margin: 0;
+      justify-content: center;
+      align-items: center;
 
-@media screen and (min-width: 600px) {
-  header {
-    width: 10%;
-    height: fit-content;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    line-height: 60px;
-  
-    .logo {
-      display: none;
-    }
-    #menu {
-      display: none;
-    }
-    .info {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      margin-top: 60px;
-      align-items: start;
-      .container-picture {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background-color: transparent;
-        border: none;
-
-        img {
-          margin-left: 3rem;
-          object-fit: cover;
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          object-position: center;
-        }
-      }
-      .info-user {
-        text-align: justify;
-        line-height: 2rem;
-        font-size: 1.5rem;
-        padding-top: 2rem;
-        padding-inline: 20px;
-        color: c.$text-primary;
-
-        span {
-          font-size: 1.5rem;
-        }
-      }
-    }
-
-    .nav {
-      opacity: 1;
-      display: flex;
-      justify-content: flex-start;
-      width: 300px;
-      height: 100vh;
-      pointer-events: painted;
-      border-radius: 0;
-      
-
-      .nav-link {
-        display: flex;       
+      .container-inicio {
         
-
-        a {
-          text-transform: uppercase;
-          text-decoration: none;
-
-          padding-left: 20px;
-          padding-right: 20px;
+        
+        h1 {
           color: c.$text-primary;
+          font-family: "Muslish";
+          font-weight: bold;
+          font-size: 6rem;
+          
 
-          &::before{
-            content: '';
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 5px;
-            background-color: c.$tertiary;
-            opacity: 0;
-            
-            
-            
+          span {
+            color: c.$quintary;
           }
-          
-          &:hover::before,
-          &.selected::before{
-            opacity: 1;
-          }
-          
         }
-      }
-      .contenedor-close {
-        display: none;
-        
+        h2 {
+          text-align: center;
+          font-size: 3rem;
+          font-weight: 400;
+          color: c.$text-primary;
+          text-transform: capitalize;
+        }
+        .profesion {
+          color: c.$quintary;
+          font-style: normal;
+          font-weight: 700;
+        }
       }
     }
   }

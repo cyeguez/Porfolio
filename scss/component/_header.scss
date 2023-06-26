@@ -9,7 +9,7 @@ header {
   align-items: center;
   padding-inline: 20px;
   line-height: 60px;
-  position: fixed ;
+  position: fixed;
   z-index: 1;
   .logo {
     a {
@@ -75,7 +75,6 @@ header {
     left: 0;
     border-radius: 0.5rem;
     background-color: c.$secondary;
-   
 
     .nav-link {
       width: fit-content;
@@ -88,28 +87,21 @@ header {
       list-style: none;
       cursor: pointer;
       li {
-        
-        
-
-        &>a:hover{
+        & > a:hover {
           color: c.$quintary;
         }
-        
-       
+
         a {
           position: relative;
-          
+
           text-transform: uppercase;
           text-decoration: none;
           font-size: 2rem;
           padding: 1rem;
           color: c.$text-primary;
           font-weight: 500;
-
-
         }
       }
-
     }
     .contenedor-close {
       width: 40px;
@@ -124,7 +116,6 @@ header {
       bottom: 20px;
 
       #close-icon {
-       
         font-size: 30px;
         font-weight: 400;
         color: c.$quaternary;

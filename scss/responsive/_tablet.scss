@@ -1,0 +1,104 @@
+@use "../var/colors" as c;
+// modo desktop
+
+@media screen and (min-width: 500px) {
+  header {
+    width: 10%;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 60px;
+
+    .logo {
+      display: none;
+    }
+    #menu {
+      display: none;
+    }
+    .info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+      align-items: start;
+      .container-picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+
+        img {
+          margin-left: 3rem;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-position: center;
+        }
+      }
+      .info-user {
+        text-align: justify;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+        padding-inline: 20px;
+        color: c.$text-primary;
+
+        span {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .nav {
+      opacity: 1;
+      display: flex;
+      justify-content: flex-start;
+      width: 300px;
+      height: 100vh;
+      pointer-events: painted;
+      border-radius: 0;
+
+      .nav-link {
+        display: flex;
+
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+
+          padding-left: 20px;
+          padding-right: 20px;
+          color: c.$text-primary;
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 5px;
+            background-color: c.$tertiary;
+            opacity: 0;
+          }
+
+          &:hover::before,
+          &.selected::before {
+            opacity: 1;
+          }
+        }
+      }
+      .contenedor-close {
+        display: none;
+      }
+    }
+  }
+
+  main {
+    #inicio {
+      padding-left: 10rem;
+      margin-left: 30%;
+    }
+  }
+}

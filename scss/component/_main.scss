@@ -6,32 +6,29 @@ main {
   .slide {
     width: 100%;
     height: 100vh;
-    background-color: pink;
   }
 
   #inicio {
     width: 100%;
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     align-items: center;
     position: relative;
     background-color: #000;
+    margin: 0 auto;
     
-    &::before{
+
+    &::before {
       content: "";
       position: absolute;
       background-image: url(../../asset/img/paisaje.jpg);
       inset: 0;
       background-repeat: no-repeat;
       background-size: cover;
-      opacity: .3; 
-      
-      
-
+      opacity: 0.3;
     }
-    
 
-    .container-inicio{
+    .container-inicio {
       width: 100%;
       display: flex;
       isolation: isolate;
@@ -41,37 +38,35 @@ main {
       img {
         width: 200px;
         height: 200px;
+        border: 8px solid c.$secondary;
         border-radius: 50%;
         object-fit: cover;
         object-position: right top;
-
-       
-      
       }
-      h1{
+      h1 {
         color: c.$text-primary;
-        font-size: 3rem;
+        font-family: "Muslish";
+        font-weight: bold;
+        font-size: 3.2rem;
         text-align: center;
         padding: 1rem;
-        
-        span{
-          color: c.$secondary;
-        }      
-  
+
+        span {
+          color: c.$quintary;
+        }
       }
-      h2{
+      h2 {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 400;
         color: c.$text-primary;
         text-transform: capitalize;
-
       }
-      .profesion{
+      .profesion {
         color: c.$quintary;
-       font-style: normal;
+        font-style: normal;
+        font-weight: 700;
       }
     }
-    
   }
 }
