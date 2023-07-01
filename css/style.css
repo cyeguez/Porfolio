@@ -205,6 +205,125 @@ main #inicio .container-inicio .profesion {
   font-style: normal;
   font-weight: 700;
 }
+main #sobre-mi {
+  width: 100%;
+  text-align: center;
+}
+main #sobre-mi .sobre-mi-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  position: relative;
+}
+main #sobre-mi .sobre-mi-container .sobre-mi-title {
+  position: absolute;
+  top: 40px;
+  left: 60rem;
+  margin-block: 6rem;
+  padding-bottom: 5rem;
+  text-align: start;
+}
+main #sobre-mi .sobre-mi-container .sobre-mi-title span {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #2c6969;
+}
+main #sobre-mi .sobre-mi-container .sobre-mi-title h3 {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+main #sobre-mi .sobre-mi-container .sobre-mi-img {
+  width: 400px;
+  height: 550px;
+  border: 15px solid #000;
+  position: relative;
+  margin-left: 20%;
+  perspective: 10rem;
+}
+main #sobre-mi .sobre-mi-container .sobre-mi-img img {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  top: -40px;
+  left: -60px;
+  transition: transform 0.5s ease-in-out;
+}
+main #sobre-mi .sobre-mi-container .sobre-mi-img img:hover {
+  transform: translate3d(4rem, -5rem, 1rem);
+}
+main #sobre-mi .sobre-mi-container .sobe-mi-content {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main #sobre-mi .sobre-mi-container .sobe-mi-content h3 {
+  width: 90%;
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 5rem;
+  margin-bottom: 3rem;
+}
+main #sobre-mi .sobre-mi-container .sobe-mi-content h3 span {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #2c6969;
+}
+main #sobre-mi .sobre-mi-container .sobe-mi-content p {
+  width: 80%;
+  font-size: 1.6rem;
+  text-align: justify;
+  line-height: 3rem;
+  font-weight: 400;
+  padding-left: 0;
+  letter-spacing: 0.5px;
+  font-family: "Muslish";
+}
+main #sobre-mi .sobre-mi-container .sobe-mi-content .sobre-mi-items {
+  width: 100%;
+  height: 200px;
+  list-style: none;
+  padding-top: 2rem;
+  font-size: 1rem;
+  font-family: "Muslish";
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+main #sobre-mi .sobre-mi-container .sobe-mi-content .sobre-mi-items li {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  gap: 1rem;
+}
+main #sobre-mi .sobre-mi-container .sobe-mi-content .sobre-mi-items li span {
+  color: #2c6969;
+}
+main #sobre-mi .sobre-mi-container .curriculum {
+  padding: 2rem 2.5rem;
+  text-decoration: none;
+  background-color: #2c6969;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: backgroud 0.3s ease, color 0.3s;
+}
+main #sobre-mi .sobre-mi-container .curriculum:hover {
+  background-color: #f6d6ac;
+  color: #33616b;
+}
 
 @media screen and (min-width: 500px) {
   header {
