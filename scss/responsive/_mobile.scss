@@ -1,5 +1,6 @@
 @use "../var/colors.scss" as c;
-
+@media screen and (max-width: 767px) {
+  
 header {
   width: 20%;
   height: 100vh;
@@ -13,7 +14,7 @@ header {
   color: c.$secondary;
   position: fixed;
   #menu {
-    display: none;
+    display: block;
   }
   .logo {
     display: flex;
@@ -88,4 +89,6 @@ header {
 
   }
 
+}
+  
 }
