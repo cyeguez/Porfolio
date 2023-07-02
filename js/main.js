@@ -1,4 +1,4 @@
-
+const home = document.getElementById("home")
 const nav = document.querySelector(".nav");
 const menu = document.getElementById("menu");
 const closeIcon = document.querySelector("#close-icon");
@@ -28,6 +28,7 @@ const toggle = () => {
   
   menu.classList.toggle("rotate");
   nav.classList.toggle("hidden");
+	
 }
 
 const prueba = () => {console.log('click')}

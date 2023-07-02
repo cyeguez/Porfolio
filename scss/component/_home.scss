@@ -1,57 +1,68 @@
 @use "../var/colors.scss" as c;
 
-  .slide {
-    width: 100%;
-    height: 100vh;
-   
+#home {
+  width: 100%;
+
+  height: 100vh;
+  background-color: c.$tertiary;
+  background-image: url("../../asset/img/paisaje.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
   }
-  #home {
-    width: 100%;
-    height: 100vh;
-    background-color: c.$tertiary;
-    background-image: url("../../asset/img/paisaje.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
+  .container-home {
+    min-width: auto;
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-position: center center;
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-color: rgba(0,0,0,0.6);
+    isolation: isolate;
+    .container-img {
+      width: 20rem;
+      height: 20rem;
+      border: 10px solid #335abc47;
+      border-radius: 100vmax;
+      margin-top: 10rem;
+      margin-bottom: 2rem;
+      position: relative;
     }
-
-    .container-home{
+    img {
       width: 100%;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      isolation: isolate;    
-      border: 1px solid red;
-      
-      .container-img{
-        width: 20rem;
-        height: 20rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      height: 100%;
 
-
-        img{
-          width:100%;
-          height: 100%;
-          border-radius: 100vmax;
-          object-fit: cover;
-          object-position: center center;         
-  
-        }
+      border-radius: 100vmax;
+      object-fit: cover;
+      object-position: center center;
+    }
+    h1 {
+      color: c.$secondary;
+      font-size: 4.5rem;
+      font-family: "Montserrat";
+      text-transform: uppercase;
+      font-weight: 800;
+      line-height: 1.4;
+      span {
+        color: c.$tertiary;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
       }
     }
-  }
-  
+    h2 {
+      color: c.$secondary;
+      font-size: 1.9rem;
+      text-transform: capitalize;
+    }
 
+    .profesion {
+      font-style: normal;
+    }
+  }
+}

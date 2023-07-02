@@ -1,22 +1,21 @@
 @use "../var/colors.scss" as c;
 
 header {
-  width: 20%;
-  height: 100vh;
+  
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   background-color: c.$primary;
   padding-left: 3rem;
   color: c.$secondary;
-  position: fixed;
-  z-index: 1;
-  border: 1px solid lawngreen;
+  
+
   #menu {
     display: none;
   }
   .logo {
+    margin-top: 5rem;
     display: flex;
     justify-content: start;
 
@@ -34,7 +33,8 @@ header {
   }
 
   .nav {
-    margin-top: -8rem;
+    margin-top: 10rem;
+
 
     .nav-link {
       width: 20rem;
@@ -72,12 +72,15 @@ header {
         }
       }
     }
-    .contenedor-close {
-      display: none;
-    }
+   
+  }
+
+  .container-close {
+    display: none;
   }
   .header-socila-media {
     width: 100%;
+    margin-top: 5rem;
 
     display: flex;
     justify-content: flex-start;
