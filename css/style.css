@@ -6,11 +6,11 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
-.mostrar {
+.hidden {
   opacity: 0;
   pointer-events: none;
   transition-duration: 0.5s;
@@ -18,7 +18,7 @@ html {
 
 .rotate {
   transition-duration: 0.5s;
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 header {
@@ -32,6 +32,8 @@ header {
   padding-left: 3rem;
   color: #FFFFFF;
   position: fixed;
+  z-index: 1;
+  border: 1px solid lawngreen;
 }
 header #menu {
   display: none;
@@ -96,43 +98,117 @@ header .header-socila-media {
   align-items: center;
   gap: 2rem;
 }
+header .header-socila-media svg:hover {
+  background-color: #3056B7;
+  border-radius: 100vmax;
+}
 
 main {
-  display: none;
+  background-color: lightpink;
+}
+
+footer {
+  background-color: lightblue;
+}
+
+.slide {
+  width: 100%;
+  height: 100vh;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background-color: #3056B7;
+  background-image: url("../../asset/img/paisaje.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#home .container-home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  isolation: isolate;
+  border: 1px solid red;
+}
+#home .container-home .container-img {
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home .container-home .container-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100vmax;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 @media screen and (max-width: 767px) {
   header {
-    width: 20%;
-    height: 100vh;
+    width: 100%;
+    height: 6.5rem;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     background-color: #002245;
-    padding-left: 3rem;
+    padding-inline: 3rem;
+    position: relative;
     color: #FFFFFF;
     position: fixed;
   }
   header #menu {
-    display: block;
+    display: inline-block;
+    transition: color 0.8s ease-in-out;
+  }
+  header #menu:hover {
+    color: #3056B7;
   }
   header .logo {
     display: flex;
     justify-content: start;
+    align-items: center;
   }
   header .logo a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 3rem;
     font-weight: 900;
-    transition: color 2s ease;
+    transition: color 0.1ms ease;
   }
   header .logo a:hover {
     color: #3056B7;
   }
   header .nav {
-    margin-top: -8rem;
+    width: 100%;
+    height: 120vh;
+    background-color: #002245;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   header .nav .nav-link {
     width: 20rem;
@@ -168,13 +244,22 @@ main {
     color: #3056B7;
   }
   header .nav .contenedor-close {
-    display: none;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    border: 10px solid black;
+    border-radius: 100vmax;
+    padding: 1rem;
+    background-color: #FFFFFF;
+  }
+  header .nav .contenedor-close span {
+    font-size: 3rem;
+    font-weight: 900;
+    color: black;
   }
   header .header-socila-media {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 2rem;
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

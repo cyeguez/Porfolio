@@ -9,16 +9,16 @@ header {
   justify-content: space-evenly;
   background-color: c.$primary;
   padding-left: 3rem;
-
   color: c.$secondary;
   position: fixed;
+  z-index: 1;
+  border: 1px solid lawngreen;
   #menu {
     display: none;
   }
   .logo {
     display: flex;
     justify-content: start;
-    
 
     a {
       text-decoration: none;
@@ -38,7 +38,6 @@ header {
 
     .nav-link {
       width: 20rem;
-      
 
       li {
         list-style: none;
@@ -73,19 +72,21 @@ header {
         }
       }
     }
-    .contenedor-close{
+    .contenedor-close {
       display: none;
     }
-    
   }
-  .header-socila-media{
+  .header-socila-media {
     width: 100%;
-    
+
     display: flex;
     justify-content: flex-start;
-    align-items:center ;
+    align-items: center;
     gap: 2rem;
 
+    svg:hover {
+      background-color: c.$tertiary;
+      border-radius: 100vmax;
+    }
   }
-
 }

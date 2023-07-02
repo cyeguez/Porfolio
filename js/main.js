@@ -27,7 +27,7 @@ console.log(closeIcon);
 const toggle = () => {
   
   menu.classList.toggle("rotate");
-  nav.classList.toggle("mostrar");
+  nav.classList.toggle("hidden");
 }
 
 const prueba = () => {console.log('click')}

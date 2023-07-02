@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -20,7 +22,7 @@
     </div>
     <span class="material-symbols-outlined" id="menu"> menu </span>
 
-    <nav class="nav">
+    <nav class="nav ">
 
       <ul class="nav-link">
         <li><a href="#Home" class="selected">Home</a></li>
@@ -49,8 +51,10 @@
   </header>
   <main>
     <section id="home" class="slide">
-      <div class="container-inicio">
-        <img src="./asset/img/cesar-inicio.jpeg" alt="Fotograía de cesar">
+      <div class="container-home">
+        <div class="container-img">
+          <img src="./asset/img/cesar.jpg" alt="Fotograía de cesar">
+        </div>
 
         <h1>Soy César <span>Yegüez</span></h1>
         <h2><span class="typed"></span></h2>
@@ -69,7 +73,7 @@
           <h3>Sobre Mí</h3>
         </div>
         <div class="sobre-mi-img">
-          <img src="./asset/img/cesar-inicio.jpeg" alt="Fotografía de César Yeguez">
+          <!-- <img src="./asset/img/cesar-inicio.jpeg" alt="Fotografía de César Yeguez"> -->
         </div>
         <div class="sobe-mi-content">
           <h3>Soy César Yeguez <br>
@@ -113,6 +117,11 @@
     </section>
 
   </main>
+  <footer>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda voluptate architecto reprehenderit laborum animi ipsum repellendus beatae, veniam tempore excepturi tempora voluptatum dolor minus, consequuntur id dignissimos perferendis? Illum!
+    </div>
+  </footer>
 
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script src="js/main.js"></script>
