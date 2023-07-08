@@ -17,14 +17,23 @@ body {
   height: 100vh;
 }
 body header {
+  grid-column: 1/2;
   grid-row: 1/3;
+}
+body main {
+  grid-column: 2/3;
+}
+body footer {
+  grid-column: 2/2;
+  background-color: lightgreen;
+}
+body section[id] {
+  scroll-margin-top: 70px;
 }
 
 .hidden {
-  opacity: 0;
-  pointer-events: none;
-  transition-duration: 0.5s;
-  z-index: 0;
+  opacity: 1 !important;
+  pointer-events: all !important;
 }
 
 .rotate {
@@ -41,44 +50,48 @@ header {
   padding-left: 3rem;
   color: #FFFFFF;
 }
-header #menu {
+header .container-header {
+  position: fixed;
+}
+header .container-header #menu {
   display: none;
 }
-header .logo {
+header .container-header .logo {
   margin-top: 5rem;
   display: flex;
   justify-content: start;
 }
-header .logo a {
+header .container-header .logo a {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 3rem;
   font-weight: 900;
   transition: color 2s ease;
 }
-header .logo a:hover {
+header .container-header .logo a:hover {
   color: #3056B7;
 }
-header .nav {
+header .container-header .nav {
   margin-top: 10rem;
+  transition: opacity 0.5s;
 }
-header .nav .nav-link {
+header .container-header .nav .nav-link {
   width: 20rem;
 }
-header .nav .nav-link li {
+header .container-header .nav .nav-link li {
   list-style: none;
   padding-block: 1.6rem;
   position: relative;
   cursor: pointer;
 }
-header .nav .nav-link li a {
+header .container-header .nav .nav-link li a {
   font-size: 2rem;
   text-decoration: none;
   color: #FFFFFF;
   text-transform: capitalize;
   transition: color 2s ease;
 }
-header .nav .nav-link li a::after {
+header .container-header .nav .nav-link li a::after {
   content: "";
   position: absolute;
   border-bottom: 1px solid #3056B7;
@@ -89,24 +102,24 @@ header .nav .nav-link li a::after {
   opacity: 0.1;
   transition: border 1s ease-in-out, color 1ms ease-in;
 }
-header .nav .nav-link li a:hover::after {
+header .container-header .nav .nav-link li a:hover::after {
   opacity: 1;
 }
-header .nav .nav-link li a:hover {
+header .container-header .nav .nav-link li a:hover {
   color: #3056B7;
 }
-header .container-close {
+header .container-header .container-close {
   display: none;
 }
-header .header-socila-media {
+header .container-header .header-socila-media {
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 30rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
 }
-header .header-socila-media svg:hover {
+header .container-header .header-socila-media svg:hover {
   background-color: #3056B7;
   border-radius: 100vmax;
 }
@@ -168,74 +181,155 @@ header .header-socila-media svg:hover {
 }
 #home .container-home h2 {
   color: #FFFFFF;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   text-transform: capitalize;
 }
 #home .container-home .profesion {
   font-style: normal;
 }
+#home .arrow {
+  margin: 40% auto 0 auto;
+  font-size: 3rem;
+  letter-spacing: -5px;
+  writing-mode: vertical-lr;
+  animation-name: moviendrew;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#home .arrow a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+@keyframes moviendrew {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+#about-me {
+  width: 100%;
+  height: 100vh;
+}
+#about-me .about-me-container {
+  width: 100%;
+  height: auto;
+}
+#about-me .about-me-container .about-me-title {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 20%;
+  border: 1px solid green;
+}
+#about-me .about-me-container .about-me-title span {
+  font-size: 1.6rem;
+  color: #3056B7;
+  font-weight: 500;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+#about-me .about-me-container .about-me-title h3 {
+  font-size: 3rem;
+  line-height: 1.4;
+  color: #000;
+  font-weight: 800;
+}
+#about-me .about-me-container .about-me-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-top: 10rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#about-me .about-me-container .about-me-content .left {
+  width: 50%;
+  border: 1px solid red;
+  padding-left: rem;
+}
+#about-me .about-me-container .about-me-content .left img {
+  width: 50%;
+  height: auto;
+  padding-left: 10rem;
+}
 
 @media screen and (max-width: 767px) {
-  header {
+  body header {
     grid-column: 1/3;
-    width: 100%;
-    height: 6.5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #002245;
-    padding-inline: 3rem;
-    position: relative;
+    grid-row: 1/-1;
+    height: 100%;
     color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  header #menu {
-    display: inline-block;
-    transition: color 0.8s ease-in-out;
+  body header .container-header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0;
+    z-index: 1;
+    background-color: #002245;
   }
-  header #menu:hover {
-    color: #3056B7;
-  }
-  header .logo {
+  body header .container-header .logo {
     margin-top: 0;
     display: flex;
     justify-content: start;
     align-items: center;
+    margin-left: 4rem;
   }
-  header .logo a {
+  body header .container-header .logo a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 3rem;
     font-weight: 900;
     transition: color 0.1ms ease;
   }
-  header .logo a:hover {
+  body header .container-header .logo a:hover {
     color: #3056B7;
   }
-  header .nav {
+  body header .container-header #menu {
+    margin-left: 35%;
+    display: inline-block;
+    transition: color 0.8s ease-in-out;
+  }
+  body header .container-header #menu:hover {
+    color: #3056B7;
+  }
+  body header .container-header .nav {
     width: 100%;
     height: 120vh;
     background-color: #002245;
     position: absolute;
     left: 0;
     top: 0;
-    margin-top: 0;
+    margin-top: -28px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
   }
-  header .nav .nav-link {
+  body header .container-header .nav .nav-link {
     width: 20rem;
   }
-  header .nav .nav-link li {
+  body header .container-header .nav .nav-link li {
     list-style: none;
     padding-block: 1.6rem;
     position: relative;
     cursor: pointer;
   }
-  header .nav .container-close {
+  body header .container-header .nav .container-close {
     display: block;
     display: flex;
     justify-content: start;
@@ -247,20 +341,20 @@ header .header-socila-media svg:hover {
     background-color: #FFFFFF;
     cursor: pointer;
   }
-  header .nav .container-close span {
+  body header .container-header .nav .container-close span {
     font-size: 3rem;
     font-weight: 900;
     color: black;
   }
-  header .header-socila-media {
+  body header .container-header .header-socila-media {
     display: none;
   }
-  main {
+  body main {
+    grid-row: 3/4;
     grid-column: 1/3;
   }
-  main #home {
+  body main #home {
     width: 100%;
-    margin-top: -35px;
     height: 100vh;
     background-color: #3056B7;
     background-image: url("../../asset/img/paisaje.jpg");
@@ -268,23 +362,22 @@ header .header-socila-media svg:hover {
     background-size: cover;
     position: relative;
   }
-  main #home::before {
+  body main #home::before {
     content: "";
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
   }
-  main #home .container-home {
-    min-width: auto;
-    max-width: 800px;
-    margin: 0 auto;
+  body main #home .container-home {
+    width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     isolation: isolate;
   }
-  main #home .container-home .container-img {
+  body main #home .container-home .container-img {
     width: 20rem;
     height: 20rem;
     border: 10px solid rgba(51, 90, 188, 0.2784313725);
@@ -293,7 +386,7 @@ header .header-socila-media svg:hover {
     margin-bottom: 2rem;
     position: relative;
   }
-  main #home .container-home img {
+  body main #home .container-home img {
     width: 100%;
     height: 100%;
     border-radius: 100vmax;
@@ -302,19 +395,19 @@ header .header-socila-media svg:hover {
     -o-object-position: center center;
        object-position: center center;
   }
-  main #home .container-home h1 {
+  body main #home .container-home h1 {
     font-size: 2rem;
     font-family: "Montserrat";
     text-transform: uppercase;
     font-weight: 800;
     line-height: 1.4;
   }
-  main #home .container-home h2 {
+  body main #home .container-home h2 {
     color: #FFFFFF;
     font-size: 1.2rem;
     text-transform: capitalize;
   }
-  main #home .container-home .profesion {
+  body main #home .container-home .profesion {
     width: -moz-fit-content;
     width: fit-content;
     font-style: normal;

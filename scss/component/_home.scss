@@ -57,12 +57,40 @@
     }
     h2 {
       color: c.$secondary;
-      font-size: 1.9rem;
+      font-size: 1.6rem;
       text-transform: capitalize;
     }
 
     .profesion {
       font-style: normal;
+    }
+  }
+  
+  .arrow {
+    margin: 40% auto 0 auto;
+    font-size: 3rem;
+    letter-spacing: -5px;
+    
+    writing-mode: vertical-lr;
+    animation-name: moviendrew;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    a{
+      text-decoration: none;
+      color: c.$secondary;
+    }
+
+    @keyframes moviendrew {
+      0% {
+        transform: translateY(0px);
+        
+      }
+      100% {
+        transform: translateY(20px);
+        
+      }
     }
   }
 }
