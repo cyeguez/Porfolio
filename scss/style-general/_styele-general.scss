@@ -10,30 +10,4 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  display: grid;
-  grid-template-rows: 1fr 100px;
-  grid-template-columns: minmax(15%, 20rem) 1fr;
-  height: 100vh;
-
-  header {
-   
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-  }
-
-  main {
-    grid-column: 2 / 3;
-  }
-
-  footer {
-    grid-column: 2/ 2;
-    background-color: lightgreen;
-  }
-
-  section[id]{
-    scroll-margin-top:70px ;
-   
-  }
-}
 
