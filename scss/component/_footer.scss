@@ -1,0 +1,4 @@
+@use "../var/colors" as c;
+footer{
+  background-color: map-get(c.$colors , primary);
+}

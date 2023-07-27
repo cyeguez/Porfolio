@@ -1,12 +1,14 @@
-@forward '../scss/style-general/styele-general.scss';
-@use './utils/function';
+@forward '../scss/style-general/style-general.scss';
 @forward '../scss/component/header.scss';
 @forward '../scss/component/main.scss';
 @forward '../scss/component/home.scss';
-@forward '../scss/component/about-me.scss';
+@forward '../scss/component/services.scss';
+@forward '../scss/component/about.scss';
 @forward '../scss/component/skill.scss';
 @forward '../scss/responsive/tablet';
 @forward '../scss/responsive/mobile';
+@forward '../scss/component/footer.scss';
+@use './utils/function';
 
 
 

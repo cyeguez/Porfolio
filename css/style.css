@@ -8,27 +8,159 @@ html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+.icon-color {
+  fill: #fa5b0f !important;
 }
 
 body {
-  display: grid;
-  grid-template-rows: 1fr 100px;
-  grid-template-columns: minmax(15%, 20rem) 1fr;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h1 h2 h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.title-section {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  margin: 3rem 1rem 0 1rem;
+}
+.title-section span {
+  display: inline-block;
+  font-size: 1rem;
+  color: #fa5b0f;
+  font-weight: 500;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.title-section h2 {
+  font-weight: 800;
+}
+
+header .header__container {
+  width: 100%;
+  height: 64px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+header .header__container nav {
+  display: none;
+}
+
+#home {
+  width: 100%;
   height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2014/08/15/11/29/beach-418742_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-body header {
-  grid-column: 1/2;
-  grid-row: 1/3;
+#home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-body main {
-  grid-column: 2/3;
+#home .home__img {
+  width: 150px;
+  height: 150px;
+  margin-top: 10vh;
+  position: relative;
 }
-body footer {
-  grid-column: 2/2;
-  background-color: lightgreen;
+#home .home__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  border-radius: 50%;
+  border: 8px solid rgba(24, 62, 78, 0.563);
 }
-body section[id] {
-  scroll-margin-top: 70px;
+#home .home__name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  margin-top: 2rem;
+}
+#home .home__name h3 {
+  color: white;
+  line-height: 1.2;
+  font-family: "Montserrat", sans-serif;
+}
+#home .home__name h3 .home__name--color {
+  color: #fa5b0f;
+}
+#home .home__name .home__name__profession {
+  color: white;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+#home .home__button a {
+  font-size: 3.5rem;
+  writing-mode: vertical-lr;
+  letter-spacing: -10px;
+  color: white;
+  position: relative;
+  margin-top: 20vh;
+  animation: latidos 1s infinite;
+}
+@keyframes latidos {
+  from {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: none;
+  }
+}
+
+#about .about__info {
+  text-align: justify;
+  padding-inline: 1rem;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .hidden {
@@ -39,377 +171,4 @@ body section[id] {
 .rotate {
   transition-duration: 0.5s;
   transform: rotate(180deg);
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  background-color: #002245;
-  padding-left: 3rem;
-  color: #FFFFFF;
-}
-header .container-header {
-  position: fixed;
-}
-header .container-header #menu {
-  display: none;
-}
-header .container-header .logo {
-  margin-top: 5rem;
-  display: flex;
-  justify-content: start;
-}
-header .container-header .logo a {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-size: 3rem;
-  font-weight: 900;
-  transition: color 2s ease;
-}
-header .container-header .logo a:hover {
-  color: #3056B7;
-}
-header .container-header .nav {
-  margin-top: 10rem;
-  transition: opacity 0.5s;
-}
-header .container-header .nav .nav-link {
-  width: 20rem;
-}
-header .container-header .nav .nav-link li {
-  list-style: none;
-  padding-block: 1.6rem;
-  position: relative;
-  cursor: pointer;
-}
-header .container-header .nav .nav-link li a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: #FFFFFF;
-  text-transform: capitalize;
-  transition: color 2s ease;
-}
-header .container-header .nav .nav-link li a::after {
-  content: "";
-  position: absolute;
-  border-bottom: 1px solid #3056B7;
-  width: 100%;
-  height: 4px;
-  bottom: 0;
-  left: 0;
-  opacity: 0.1;
-  transition: border 1s ease-in-out, color 1ms ease-in;
-}
-header .container-header .nav .nav-link li a:hover::after {
-  opacity: 1;
-}
-header .container-header .nav .nav-link li a:hover {
-  color: #3056B7;
-}
-header .container-header .container-close {
-  display: none;
-}
-header .container-header .header-socila-media {
-  width: 100%;
-  margin-top: 30rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 2rem;
-}
-header .container-header .header-socila-media svg:hover {
-  background-color: #3056B7;
-  border-radius: 100vmax;
-}
-
-#home {
-  width: 100%;
-  height: 100vh;
-  background-color: #3056B7;
-  background-image: url("../../asset/img/paisaje.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-#home::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-#home .container-home {
-  min-width: auto;
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  isolation: isolate;
-}
-#home .container-home .container-img {
-  width: 20rem;
-  height: 20rem;
-  border: 10px solid rgba(51, 90, 188, 0.2784313725);
-  border-radius: 100vmax;
-  margin-top: 10rem;
-  margin-bottom: 2rem;
-  position: relative;
-}
-#home .container-home img {
-  width: 100%;
-  height: 100%;
-  border-radius: 100vmax;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
-}
-#home .container-home h1 {
-  color: #FFFFFF;
-  font-size: 4.5rem;
-  font-family: "Montserrat";
-  text-transform: uppercase;
-  font-weight: 800;
-  line-height: 1.4;
-}
-#home .container-home h1 span {
-  color: #3056B7;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
-}
-#home .container-home h2 {
-  color: #FFFFFF;
-  font-size: 1.6rem;
-  text-transform: capitalize;
-}
-#home .container-home .profesion {
-  font-style: normal;
-}
-#home .arrow {
-  margin: 40% auto 0 auto;
-  font-size: 3rem;
-  letter-spacing: -5px;
-  writing-mode: vertical-lr;
-  animation-name: moviendrew;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-#home .arrow a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-@keyframes moviendrew {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(20px);
-  }
-}
-
-#about-me {
-  width: 100%;
-  height: 100vh;
-}
-#about-me .about-me-container {
-  width: 100%;
-  height: auto;
-}
-#about-me .about-me-container .about-me-title {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding-left: 20%;
-  border: 1px solid green;
-}
-#about-me .about-me-container .about-me-title span {
-  font-size: 1.6rem;
-  color: #3056B7;
-  font-weight: 500;
-  margin-bottom: 4px;
-  text-transform: uppercase;
-}
-#about-me .about-me-container .about-me-title h3 {
-  font-size: 3rem;
-  line-height: 1.4;
-  color: #000;
-  font-weight: 800;
-}
-#about-me .about-me-container .about-me-content {
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding-top: 10rem;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#about-me .about-me-container .about-me-content .left {
-  width: 50%;
-  border: 1px solid red;
-  padding-left: rem;
-}
-#about-me .about-me-container .about-me-content .left img {
-  width: 50%;
-  height: auto;
-  padding-left: 10rem;
-}
-
-@media screen and (max-width: 767px) {
-  body header {
-    grid-column: 1/3;
-    grid-row: 1/-1;
-    height: 100%;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  body header .container-header {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    left: 0;
-    z-index: 1;
-    background-color: #002245;
-  }
-  body header .container-header .logo {
-    margin-top: 0;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-left: 4rem;
-  }
-  body header .container-header .logo a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 3rem;
-    font-weight: 900;
-    transition: color 0.1ms ease;
-  }
-  body header .container-header .logo a:hover {
-    color: #3056B7;
-  }
-  body header .container-header #menu {
-    margin-left: 35%;
-    display: inline-block;
-    transition: color 0.8s ease-in-out;
-  }
-  body header .container-header #menu:hover {
-    color: #3056B7;
-  }
-  body header .container-header .nav {
-    width: 100%;
-    height: 120vh;
-    background-color: #002245;
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: -28px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-  }
-  body header .container-header .nav .nav-link {
-    width: 20rem;
-  }
-  body header .container-header .nav .nav-link li {
-    list-style: none;
-    padding-block: 1.6rem;
-    position: relative;
-    cursor: pointer;
-  }
-  body header .container-header .nav .container-close {
-    display: block;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-block: 5rem;
-    border: 10px solid black;
-    border-radius: 100vmax;
-    padding: 1rem;
-    background-color: #FFFFFF;
-    cursor: pointer;
-  }
-  body header .container-header .nav .container-close span {
-    font-size: 3rem;
-    font-weight: 900;
-    color: black;
-  }
-  body header .container-header .header-socila-media {
-    display: none;
-  }
-  body main {
-    grid-row: 3/4;
-    grid-column: 1/3;
-  }
-  body main #home {
-    width: 100%;
-    height: 100vh;
-    background-color: #3056B7;
-    background-image: url("../../asset/img/paisaje.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  body main #home::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  body main #home .container-home {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    isolation: isolate;
-  }
-  body main #home .container-home .container-img {
-    width: 20rem;
-    height: 20rem;
-    border: 10px solid rgba(51, 90, 188, 0.2784313725);
-    border-radius: 100vmax;
-    margin-top: 10rem;
-    margin-bottom: 2rem;
-    position: relative;
-  }
-  body main #home .container-home img {
-    width: 100%;
-    height: 100%;
-    border-radius: 100vmax;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center center;
-       object-position: center center;
-  }
-  body main #home .container-home h1 {
-    font-size: 2rem;
-    font-family: "Montserrat";
-    text-transform: uppercase;
-    font-weight: 800;
-    line-height: 1.4;
-  }
-  body main #home .container-home h2 {
-    color: #FFFFFF;
-    font-size: 1.2rem;
-    text-transform: capitalize;
-  }
-  body main #home .container-home .profesion {
-    width: -moz-fit-content;
-    width: fit-content;
-    font-style: normal;
-  }
 }/*# sourceMappingURL=style.css.map */
