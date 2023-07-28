@@ -9,8 +9,9 @@ html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  scroll-padding-top: 20px;
+ 
 }
+
 
 .icon-color{
   fill :map-get(c.$colors, colorResalt ) !important;
@@ -30,13 +31,14 @@ h1{
 }
 h2{
   font-size: 34px;
+  font-weight: 800;
 }
 
 h3{
   font-size: 32px;
 }
 
-h1 h2 h3{
+h1, h2 ,h3{
   font-family: 'Poppins', sans-serif;
 }
 
@@ -48,20 +50,36 @@ li{
   list-style: none;
 }
 
-.title-section{
+  section {
+    scroll-margin-top: 100px;
+    
+  }
+
+
+  .title-section{
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
-  margin: 3rem 1rem 0 1rem;
+  margin: 10rem 1.6rem 0 1.6rem;
+  
   span{
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.6rem;
     color:map-get(c.$colors, colorResalt );
     font-weight: 500;
     margin-bottom: 4px;
     text-transform: uppercase;
     
   }
-  h2{
-    font-weight: 800;
-  }
+  
+}
+
+p{
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  
+}
+
+a{
+  text-decoration: none;
+  
 }

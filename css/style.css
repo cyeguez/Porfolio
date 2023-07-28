@@ -8,7 +8,6 @@ html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  scroll-padding-top: 20px;
 }
 
 .icon-color {
@@ -27,13 +26,14 @@ h1 {
 
 h2 {
   font-size: 34px;
+  font-weight: 800;
 }
 
 h3 {
   font-size: 32px;
 }
 
-h1 h2 h3 {
+h1, h2, h3 {
   font-family: "Poppins", sans-serif;
 }
 
@@ -45,21 +45,31 @@ li {
   list-style: none;
 }
 
+section {
+  scroll-margin-top: 100px;
+}
+
 .title-section {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
-  margin: 3rem 1rem 0 1rem;
+  margin: 10rem 1.6rem 0 1.6rem;
 }
 .title-section span {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #fa5b0f;
   font-weight: 500;
   margin-bottom: 4px;
   text-transform: uppercase;
 }
-.title-section h2 {
-  font-weight: 800;
+
+p {
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 header .header__container {
@@ -89,6 +99,7 @@ header .header__container nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 #home::before {
   content: "";
@@ -156,11 +167,128 @@ header .header__container nav {
   }
 }
 
-#about .about__info {
+#services {
+  background-color: #F9F9F9;
+  margin-top: 10rem;
+  padding-top: 4rem;
+}
+#services .services__container {
+  min-width: 100%;
+  max-width: 900px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 1.6rem;
+  gap: 3rem;
+  margin: 0 auto;
+}
+#services .services__container .services__item {
+  width: 350px;
+  height: 350px;
+  background-color: white;
+  padding: 3rem 1.6rem 1.6rem 1.6rem;
+}
+#services .services__container .services__item svg {
+  width: 30px;
+  height: 30px;
+  margin-left: 1rem;
+}
+#services .services__container .services__item h3 {
+  margin-top: 3.2rem;
+  font-size: 18px;
+}
+#services .services__container .services__item p {
+  margin: 3.2rem auto;
+  font-size: 16px;
+  line-height: 2;
   text-align: justify;
-  padding-inline: 1rem;
+}
+#services .services__container .services__contact {
+  padding: 0 0 5rem 1.6rem;
+  margin-top: 3.2rem;
+  margin-bottom: 10rem;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2;
+}
+#services .services__container .services__contact a {
+  color: black;
+  font-weight: bold;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.576);
+  padding-bottom: 2px;
+}
+
+#about {
+  letter-spacing: 0.5px;
+}
+#about .about__info {
+  padding-inline: 1.6rem;
+}
+#about .about__info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+#about .about__info .about__info__description {
+  line-height: 3.2rem;
+  padding-block: 3.2rem;
   font-size: 16px;
   font-weight: 400;
+  color: #333;
+  text-align: justify;
+}
+#about .about__info .about__info__description span {
+  color: #fa5b0f;
+}
+#about .about__personal__info {
+  padding: 1.6rem;
+}
+#about .about__personal__info ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-block: 1.4rem;
+  line-height: 1.6rem;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+}
+#about .btn {
+  margin-left: 1.6rem;
+  padding: 2rem 4rem;
+  border: none;
+  background-color: #fa5b0f;
+  font-family: "Poppins", sans-serif;
+}
+#about .btn a {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#portfolio {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+#portfolio .portfolio__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+#portfolio .portfolio__container .portfolio__item {
+  width: 350px;
+  height: 350px;
+  padding: 16px;
 }
 
 .hidden {

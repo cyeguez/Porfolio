@@ -1,0 +1,27 @@
+@use "../var/colors" as c;
+#portfolio {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  
+
+
+  .portfolio__container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    .portfolio__item{
+      width: 350px;
+      height: 350px;
+      padding: 16px;
+    }
+    
+  }
+}

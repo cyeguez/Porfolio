@@ -1,12 +1,58 @@
 @use "../var/colors.scss" as c;
-#about{
-
-  .about__info{
-    text-align: justify;
-    padding-inline: 1rem;
-    font-size: 16px;
-    font-weight: 400;
-  }
-
+#about {
+ 
+  letter-spacing: .5px;
+ 
   
+  .about__info {
+    padding-inline: 1.6rem;
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: black;
+    }
+
+    .about__info__description {
+      line-height: 3.2rem;
+      padding-block: 3.2rem;
+      font-size: 16px;
+      font-weight: 400;
+      color: map-get(c.$colors, colorText);
+      text-align: justify;
+      
+      span{
+        color: map-get(c.$colors, colorResalt);
+      }
+    }
+  }
+  .about__personal__info{
+    padding: 1.6rem;
+
+    ul li{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-block: 1.4rem;
+      line-height:1.6rem;
+      gap: 1rem;
+      font-size: 1.3rem;
+      font-family: 'Mulish', sans-serif;
+      font-weight: 600;
+    }
+  }
+  .btn{
+    margin-left: 1.6rem;
+    padding: 2rem 4rem;
+    border: none;
+    background-color: map-get(c.$colors, colorResalt);
+    font-family: 'Poppins', sans-serif;
+    
+    a{
+      color: map-get(c.$colors, colorWhite);
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    
+
+  }
 }
