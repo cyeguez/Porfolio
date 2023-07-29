@@ -2,21 +2,29 @@
 
 #services {
   background-color: map-get(c.$colors, colorBackground);
-  margin-top: 10rem;
-  padding-top: 4rem;
+  width: 100%;
+  
+  
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 0 auto;
+  
 
   .services__container {
     min-width: 100%;
     max-width: 900px;
     min-height: 100vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     padding: 1.6rem;
     gap: 3rem;
     margin: 0 auto;
-    
 
     .services__item {
       width: 350px;
@@ -32,7 +40,6 @@
       h3 {
         margin-top: 3.2rem;
         font-size: 18px;
-       
       }
 
       p {

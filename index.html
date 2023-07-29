@@ -1,512 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>César Yegüez</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;1,400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="header__container">
-        <div class="header__logo">
-          <p>Logo</p>
-        </div>
-        <svg
-          class="icon-color"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          style="fill: rgba(0, 0, 0, 1)"
-        >
-          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>César Yegüez</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="header__container">
+      <div class="header__logo">
+        <p>Logo</p>
+      </div>
+      <svg class="icon-color" id="menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        style="fill: rgba(0, 0, 0, 1)">
+        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+      </svg>
+
+      <nav class="nav ">
+        <ul class="nav__container">
+          <li class="nav__item"><a href="#home">HOME</a></li>
+          <li class="nav__item"><a href="#about">ABOUT</a></li>
+          <li class="nav__item"><a href="#services">SERVICES</a></li>
+          <li class="nav__item"><a href="#portfolio">PORTFOLIO</a></li>
+          <li class="nav__item"><a href="#contact">CONTACT</a></li>
+        </ul>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+          style="fill: rgba(0, 0, 0, 1);">
+          <path
+            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+          </path>
         </svg>
-
-        <nav class="nav">
-          <ul nav__container>
-            <li class="nav__item">HOME</li>
-            <li class="nav__item">ABOUT</li>
-            <li class="nav__item">SERVICES</li>
-            <li class="nav__item">PORTFOLIO</li>
-            <li class="nav__item">CONTACT</li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="main__container">
-        <section id="home">
-          <div class="home__img">
-            <img src="./asset/img/cesar.jpg" alt="fotografía de Cesar Yegüez" />
-          </div>
-          <div class="home__name">
-            <h3>
-              César <br />
-              <span class="home__name--color">Yegüez</span>
-            </h3>
-            <span class="home__name__profession">
-              Soy Development Frontend</span
-            >
-          </div>
-          <div class="home__button">
-            <a href="#about"> >> </a>
-          </div>
-        </section>
-
-        <section id="about">
-          <div class="about__title title-section">
-            <span>Biography</span>
-            <h2>About Me</h2>
-          </div>
-          <div class="about__img">
-            <img src="" alt="" />
-          </div>
-          <div class="about__info">
-            <h3>
-              Soy César Yegüez <br />
-              Desarrollador Frontend
-            </h3>
-
-            <p class="about__info__description">
-              Hola, mi nombre es <span>César Yegüez</span>. Soy desarrollador
-              frontend, soy muy apasionado y dedicado en mi trabajo, Con 1 año
-              de experiencia en el rubro de Desarrollador frontend, Me encuentro
-              estudiando constantemente para contar con las habilidades
-              necesarias y estar a la altura de las exigencias del proyecto.
-            </p>
-          </div>
-          <div class="about__personal__info">
-            <ul>
-              <li>
-                <svg
-                  class="icon-color"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M5 12H4v8a2 2 0 0 0 2 2h5V12H5zm13 0h-5v10h5a2 2 0 0 0 2-2v-8h-2zm.791-5A4.92 4.92 0 0 0 19 5.5C19 3.57 17.43 2 15.5 2c-1.622 0-2.705 1.482-3.404 3.085C11.407 3.57 10.269 2 8.5 2 6.57 2 5 3.57 5 5.5c0 .596.079 1.089.209 1.5H2v4h9V9h2v2h9V7h-3.209zM7 5.5C7 4.673 7.673 4 8.5 4c.888 0 1.714 1.525 2.198 3H8c-.374 0-1 0-1-1.5zM15.5 4c.827 0 1.5.673 1.5 1.5C17 7 16.374 7 16 7h-2.477c.51-1.576 1.251-3 1.977-3z"
-                  ></path>
-                </svg>
-                <span>
-                  <label>Cumpleaños:</label>
-                  02.11.1986
-                </span>
-              </li>
-              <li>
-                <svg
-                  class="icon-color"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M21 20V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2zM9 18H7v-2h2v2zm0-4H7v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm2-5H5V7h14v2z"
-                  ></path>
-                </svg>
-                <span>
-                  Edad:
-                  <label>30</label>
-                </span>
-              </li>
-              <li>
-                <svg
-                  class="icon-color"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z"
-                  ></path>
-                  <path
-                    d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z"
-                  ></path>
-                </svg>
-                <span>
-                  <label> Dirección: </label>
-                  la Serena - Coquimbo
-                </span>
-              </li>
-              <li>
-                <svg
-                  class="icon-color"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M22 8.65A5 5 0 0 0 17 4H7a5 5 0 0 0-5 4.74A2 2 0 0 0 2 9v7.5A3.48 3.48 0 0 0 5.5 20c1.43 0 2.32-1.06 3.19-2.09.32-.37.65-.76 1-1.1a4.81 4.81 0 0 1 1.54-.75 6.61 6.61 0 0 1 1.54 0 4.81 4.81 0 0 1 1.54.75c.35.34.68.73 1 1.1.87 1 1.76 2.09 3.19 2.09a3.48 3.48 0 0 0 3.5-3.5V9a2.09 2.09 0 0 0 0-.26zm-2 7.85a1.5 1.5 0 0 1-1.5 1.5c-.5 0-1-.64-1.66-1.38-.34-.39-.72-.85-1.15-1.26a6.68 6.68 0 0 0-2.46-1.25 6.93 6.93 0 0 0-2.46 0 6.68 6.68 0 0 0-2.46 1.25c-.43.41-.81.87-1.15 1.26C6.54 17.36 6 18 5.5 18A1.5 1.5 0 0 1 4 16.5V9a.77.77 0 0 0 0-.15A3 3 0 0 1 7 6h10a3 3 0 0 1 3 2.72v.12A.86.86 0 0 0 20 9z"
-                  ></path>
-                  <circle cx="16" cy="12" r="1"></circle>
-                  <circle cx="18" cy="10" r="1"></circle>
-                  <circle cx="16" cy="8" r="1"></circle>
-                  <circle cx="14" cy="10" r="1"></circle>
-                  <circle cx="8" cy="10" r="2"></circle>
-                </svg>
-                <span>
-                  <label> Intereses: </label>
-                  Game Pc, animes
-                </span>
-              </li>
-              <li>
-                <svg
-                  class="icon-color"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M2 8v11.529S6.621 19.357 12 22c5.379-2.643 10-2.471 10-2.471V8s-5.454 0-10 2.471C7.454 8 2 8 2 8z"
-                  ></path>
-                  <circle cx="12" cy="5" r="3"></circle>
-                </svg>
-                <span>
-                  <label>Universidad:</label>
-                  Universidad de Oriente Venezuela
-                </span>
-              </li>
-              <li>
-                <svg
-                  class="icon-color"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: rgba(0, 0, 0, 1)"
-                >
-                  <path d="M2 7v1l11 4 9-4V7L11 4z"></path>
-                  <path
-                    d="M4 11v4.267c0 1.621 4.001 3.893 9 3.734 4-.126 6.586-1.972 7-3.467.024-.089.037-.178.037-.268V11L13 14l-5-1.667v3.213l-1-.364V12l-3-1z"
-                  ></path>
-                </svg>
-                <span>
-                  <label>Nivel de Educación:</label>
-                  Superior
-                </span>
-              </li>
-              <li>
-                <svg
-                  class="icon-color"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"
-                  ></path>
-                </svg>
-                <span>
-                  <label>Correo:</label>
-                  cesar.yeguez@gmail.com
-                </span>
-              </li>
-              <li>
-                <svg
-                  class="icon-color"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z"
-                  ></path>
-                </svg>
-                <span><label>Contacto: </label> +569 76619575</span>
-              </li>
-            </ul>
-          </div>
-          <button class="btn"><a href="#">Descarga CV</a></button>
-        </section>
-        <section id="services">
-          <div class="services__title title-section">
-            <span>Services</span>
-            <h2>Quality Services</h2>
-          </div>
-          <div class="services__container">
-            <div class="services__item">
-              <svg
-                class="icon-color"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 384 512"
-              >
-                <path
-                  d="M297.2 248.9C311.6 228.3 320 203.2 320 176c0-70.7-57.3-128-128-128S64 105.3 64 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7l0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5H109c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8l0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C27.6 247.9 16 213.3 16 176C16 78.8 94.8 0 192 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4l0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5H226.4c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8l0 0 0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM192 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80V416H272v16c0 44.2-35.8 80-80 80z"
-                />
-              </svg>
-              <h3>Creative Design</h3>
-              <p>
-                Web design is a similar process of creation, with the intention
-                of presenting...
-              </p>
-            </div>
-            <div class="services__item">
-              <svg
-                class="icon-color"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 640 512"
-              >
-                <path
-                  d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"
-                />
-              </svg>
-              <h3>Web Development</h3>
-              <p>
-                Web design is a similar process of creation, with the intention
-                of presenting...
-              </p>
-            </div>
-            <div class="services__item">
-              <svg
-                class="icon-color"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376V479.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z"
-                />
-              </svg>
-              <h3>Brand Identity</h3>
-              <p>
-                Web design is a similar process of creation, with the intention
-                of presenting...
-              </p>
-            </div>
-            <div class="services__item">
-              <svg
-                class="icon-color"
-                width="24"
-                height="24"
-                viewBox="0 0 128 128"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title />
-                <path
-                  d="M126,94H115.67a5.94,5.94,0,0,0,.33-1.94V27.94A6,6,0,0,0,110.06,22H17.94A6,6,0,0,0,12,27.94V92.06A5.94,5.94,0,0,0,12.33,94H2a2,2,0,0,0-2,2v.5C0,101,3.64,106,8.5,106h111c4.86,0,8.5-5,8.5-9.5V96A2,2,0,0,0,126,94ZM16,92.06V27.94A1.94,1.94,0,0,1,17.94,26h92.12A1.94,1.94,0,0,1,112,27.94V92.06A1.94,1.94,0,0,1,110.06,94H17.94A1.94,1.94,0,0,1,16,92.06ZM119.5,102H8.5c-1.95,0-3.67-2-4.27-4H123.77C123.17,100.05,121.45,102,119.5,102Z"
-                />
-                <path
-                  d="M76.49,62.17c-2.6-1.06-4.19-1.8-4.38-3.12a2.43,2.43,0,0,1,1.12-2.35c1.31-.94,3.92-1.33,7.3.39a2,2,0,1,0,1.81-3.56c-4.22-2.15-8.5-2.18-11.44-.09a6.41,6.41,0,0,0-2.75,6.17c.52,3.7,4,5.12,6.84,6.26,3.48,1.42,5,2.26,5,4.39a3.72,3.72,0,0,1-2,2.59c-1.23.72-3.9,1.58-8-.74a2,2,0,1,0-2,3.48,14.18,14.18,0,0,0,7,2,9.93,9.93,0,0,0,5-1.33,7.45,7.45,0,0,0,4-6C84,65.22,79.66,63.45,76.49,62.17Z"
-                />
-                <path
-                  d="M54,42H46a2,2,0,0,0-2,2V75a2,2,0,0,0,4,0V65h6c7.18,0,12-4.42,12-11A11.74,11.74,0,0,0,54,42Zm0,19H48V46h6a7.73,7.73,0,0,1,8,8C62,58.38,59,61,54,61Z"
-                />
-              </svg>
-              <h3>Adobe Illustrator</h3>
-              <p>
-                Web design is a similar process of creation, with the intention
-                of presenting...
-              </p>
-            </div>
-            <div class="services__item">
-              <svg
-                class="icon-color"
-                width="24"
-                height="24"
-                viewBox="0 0 128 128"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title />
-                <path
-                  d="M126,94H115.67a5.94,5.94,0,0,0,.33-1.94V27.94A6,6,0,0,0,110.06,22H17.94A6,6,0,0,0,12,27.94V92.06A5.94,5.94,0,0,0,12.33,94H2a2,2,0,0,0-2,2v.5C0,101,3.64,106,8.5,106h111c4.86,0,8.5-5,8.5-9.5V96A2,2,0,0,0,126,94ZM16,92.06V27.94A1.94,1.94,0,0,1,17.94,26h92.12A1.94,1.94,0,0,1,112,27.94V92.06A1.94,1.94,0,0,1,110.06,94H17.94A1.94,1.94,0,0,1,16,92.06ZM119.5,102H8.5c-1.95,0-3.67-2-4.27-4H123.77C123.17,100.05,121.45,102,119.5,102Z"
-                />
-                <path
-                  d="M76.49,62.17c-2.6-1.06-4.19-1.8-4.38-3.12a2.43,2.43,0,0,1,1.12-2.35c1.31-.94,3.92-1.33,7.3.39a2,2,0,1,0,1.81-3.56c-4.22-2.15-8.5-2.18-11.44-.09a6.41,6.41,0,0,0-2.75,6.17c.52,3.7,4,5.12,6.84,6.26,3.48,1.42,5,2.26,5,4.39a3.72,3.72,0,0,1-2,2.59c-1.23.72-3.9,1.58-8-.74a2,2,0,1,0-2,3.48,14.18,14.18,0,0,0,7,2,9.93,9.93,0,0,0,5-1.33,7.45,7.45,0,0,0,4-6C84,65.22,79.66,63.45,76.49,62.17Z"
-                />
-                <path
-                  d="M54,42H46a2,2,0,0,0-2,2V75a2,2,0,0,0,4,0V65h6c7.18,0,12-4.42,12-11A11.74,11.74,0,0,0,54,42Zm0,19H48V46h6a7.73,7.73,0,0,1,8,8C62,58.38,59,61,54,61Z"
-                />
-              </svg>
-              <h3>Adobe Illustrator</h3>
-              <p>
-                Web design is a similar process of creation, with the intention
-                of presenting...
-              </p>
-            </div>
-            <div class="services__item">
-              <svg
-                class="icon-color"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z"
-                />
-              </svg>
-              <h3>Social Media</h3>
-              <p>
-                Web design is a similar process of creation, with the intention
-                of presenting..
-              </p>
-            </div>
-            <p class="services__contact">Estas interesado en trabajar conmigo ? 
-              <a href="#contact"><strong>Contáctame</strong></a> </p>
-          </div>
-
-          
-        </section>
-
-        <section id="portfolio">
-          <div class="portfolio__title title-section">
-            <span>Portfolio</span>
-            <h2>Featured Works</h2>
-          </div>
-
-          <div class="portfolio__container">
-            <div class="portfolio__item">
-              <img src="https://loremflickr.com/320/240?random=1" />
-            </div>
-            <div class="portfolio__item">
-              <img src="https://loremflickr.com/320/240?random=2" />
-            </div>
-            <div class="portfolio__item">
-              <img src="https://loremflickr.com/320/240?random=3" />
-            </div>
-            <div class="portfolio__item">
-              <img src="https://loremflickr.com/320/240?random=2" />
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <section id="contact">
-        <div class="contact__title title-section contact">
-          <span>contact</span>
-          <h2>Get in Touch</h2>
-          <div>
-            <p>
-              Please fill out the form on this section to contact with me. Or
-              call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday
-            </p>
-          </div>
-          <form class="contact__form">
-            <input type="text" id="contact__name" placeholder="Name" />
-            <br />
-            <br />
-            <input type="email" placeholder="Email" id="contact__email" />
-            <br />
-            <br />
-            <textarea
-              name="message"
-              id="contact__message"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <br />
-            <br />
-            <input type="submit" value="Send Message" />
-          </form>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="main__container">
+      <section id="home">
+        <div class="home__img">
+          <img src="./asset/img/cesar.jpg" alt="fotografía de Cesar Yegüez" />
         </div>
-
-        <div class="contact__location">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.023167013785!2d-71.23510582364324!3d-29.921235225575366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691cb64a86262f9%3A0x4e4fde0d7ecbacf!2sRa%C3%BAl%20Salamanca%20Jorquera%201650%2C%20La%20Serena%2C%20Coquimbo!5e0!3m2!1ses!2scl!4v1690402518187!5m2!1ses!2scl"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="home__name">
+          <h3>
+            César <br />
+            <span class="home__name--color">Yegüez</span>
+          </h3>
+          <span class="home__name__profession">
+            Soy Development Frontend</span>
+        </div>
+        <div class="home__button">
+          <a href="#about"> >> </a>
         </div>
       </section>
-    </main>
-    <footer id="footer">
-      <p>© Copyright 2019-2021. All rights are reserved.</p>
 
-      <div class="footer__social-media">
-        <a href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            style="fill: rgba(255, 254, 254, 1)"
-          >
-            <circle cx="4.983" cy="5.009" r="2.188"></circle>
-            <path
-              d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"
-            ></path>
-          </svg>
-        </a>
+      <section id="about">
+        <div class="about__title title-section">
+          <span>Biography</span>
+          <h2>About Me</h2>
+        </div>
+        <div class="about__img">
+          <img src="" alt="" />
+        </div>
+        <div class="about__info">
+          <h3>
+            Soy César Yegüez <br />
+            Desarrollador Frontend
+          </h3>
 
-        <a href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            style="fill: rgba(255, 254, 254, 1)"
-          >
-            <path
-              d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
-            ></path>
-          </svg>
-        </a>
-        <a href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            style="fill: rgba(255, 254, 254, 1)"
-          >
-            <path
-              d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"
-            ></path>
-            <circle cx="11.994" cy="11.979" r="3.003"></circle>
-          </svg>
-        </a>
-        <a href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            style="fill: rgba(255, 254, 254, 1)"
-          >
-            <path
-              d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"
-            ></path>
-          </svg>
-        </a>
+          <p class="about__info__description">
+            Hola, mi nombre es <span>César Yegüez</span>. Soy desarrollador
+            frontend, soy muy apasionado y dedicado en mi trabajo, Con 1 año
+            de experiencia en el rubro de Desarrollador frontend, Me encuentro
+            estudiando constantemente para contar con las habilidades
+            necesarias y estar a la altura de las exigencias del proyecto.
+          </p>
+        </div>
+        <div class="about__personal__info">
+          <ul>
+            <li>
+              <svg class="icon-color" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1)">
+                <path
+                  d="M5 12H4v8a2 2 0 0 0 2 2h5V12H5zm13 0h-5v10h5a2 2 0 0 0 2-2v-8h-2zm.791-5A4.92 4.92 0 0 0 19 5.5C19 3.57 17.43 2 15.5 2c-1.622 0-2.705 1.482-3.404 3.085C11.407 3.57 10.269 2 8.5 2 6.57 2 5 3.57 5 5.5c0 .596.079 1.089.209 1.5H2v4h9V9h2v2h9V7h-3.209zM7 5.5C7 4.673 7.673 4 8.5 4c.888 0 1.714 1.525 2.198 3H8c-.374 0-1 0-1-1.5zM15.5 4c.827 0 1.5.673 1.5 1.5C17 7 16.374 7 16 7h-2.477c.51-1.576 1.251-3 1.977-3z">
+                </path>
+              </svg>
+              <span>
+                <label>Cumpleaños:</label>
+                02.11.1986
+              </span>
+            </li>
+            <li>
+              <svg class="icon-color" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1)">
+                <path
+                  d="M21 20V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2zM9 18H7v-2h2v2zm0-4H7v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm2-5H5V7h14v2z">
+                </path>
+              </svg>
+              <span>
+                Edad:
+                <label>30</label>
+              </span>
+            </li>
+            <li>
+              <svg class="icon-color" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1)">
+                <path
+                  d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z">
+                </path>
+                <path
+                  d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z">
+                </path>
+              </svg>
+              <span>
+                <label> Dirección: </label>
+                la Serena - Coquimbo
+              </span>
+            </li>
+            <li>
+              <svg class="icon-color" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1)">
+                <path
+                  d="M22 8.65A5 5 0 0 0 17 4H7a5 5 0 0 0-5 4.74A2 2 0 0 0 2 9v7.5A3.48 3.48 0 0 0 5.5 20c1.43 0 2.32-1.06 3.19-2.09.32-.37.65-.76 1-1.1a4.81 4.81 0 0 1 1.54-.75 6.61 6.61 0 0 1 1.54 0 4.81 4.81 0 0 1 1.54.75c.35.34.68.73 1 1.1.87 1 1.76 2.09 3.19 2.09a3.48 3.48 0 0 0 3.5-3.5V9a2.09 2.09 0 0 0 0-.26zm-2 7.85a1.5 1.5 0 0 1-1.5 1.5c-.5 0-1-.64-1.66-1.38-.34-.39-.72-.85-1.15-1.26a6.68 6.68 0 0 0-2.46-1.25 6.93 6.93 0 0 0-2.46 0 6.68 6.68 0 0 0-2.46 1.25c-.43.41-.81.87-1.15 1.26C6.54 17.36 6 18 5.5 18A1.5 1.5 0 0 1 4 16.5V9a.77.77 0 0 0 0-.15A3 3 0 0 1 7 6h10a3 3 0 0 1 3 2.72v.12A.86.86 0 0 0 20 9z">
+                </path>
+                <circle cx="16" cy="12" r="1"></circle>
+                <circle cx="18" cy="10" r="1"></circle>
+                <circle cx="16" cy="8" r="1"></circle>
+                <circle cx="14" cy="10" r="1"></circle>
+                <circle cx="8" cy="10" r="2"></circle>
+              </svg>
+              <span>
+                <label> Intereses: </label>
+                Game Pc, animes
+              </span>
+            </li>
+            <li>
+              <svg class="icon-color" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1)">
+                <path
+                  d="M2 8v11.529S6.621 19.357 12 22c5.379-2.643 10-2.471 10-2.471V8s-5.454 0-10 2.471C7.454 8 2 8 2 8z">
+                </path>
+                <circle cx="12" cy="5" r="3"></circle>
+              </svg>
+              <span>
+                <label>Universidad:</label>
+                Universidad de Oriente Venezuela
+              </span>
+            </li>
+            <li>
+              <svg class="icon-color" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1)">
+                <path d="M2 7v1l11 4 9-4V7L11 4z"></path>
+                <path
+                  d="M4 11v4.267c0 1.621 4.001 3.893 9 3.734 4-.126 6.586-1.972 7-3.467.024-.089.037-.178.037-.268V11L13 14l-5-1.667v3.213l-1-.364V12l-3-1z">
+                </path>
+              </svg>
+              <span>
+                <label>Nivel de Educación:</label>
+                Superior
+              </span>
+            </li>
+            <li>
+              <svg class="icon-color" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1)">
+                <path
+                  d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                </path>
+              </svg>
+              <span>
+                <label>Correo:</label>
+                cesar.yeguez@gmail.com
+              </span>
+            </li>
+            <li>
+              <svg class="icon-color" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1)">
+                <path
+                  d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z">
+                </path>
+              </svg>
+              <span><label>Contacto: </label> +569 76619575</span>
+            </li>
+          </ul>
+        </div>
+        <button class="btn"><a href="#">Descarga CV</a></button>
+      </section>
+      <section id="services">
+        <div class="services__title title-section">
+          <span>Services</span>
+          <h2>Quality Services</h2>
+        </div>
+        <div class="services__container">
+          <div class="services__item">
+            <svg class="icon-color" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 384 512">
+              <path
+                d="M297.2 248.9C311.6 228.3 320 203.2 320 176c0-70.7-57.3-128-128-128S64 105.3 64 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7l0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5H109c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8l0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C27.6 247.9 16 213.3 16 176C16 78.8 94.8 0 192 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4l0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5H226.4c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8l0 0 0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM192 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80V416H272v16c0 44.2-35.8 80-80 80z" />
+            </svg>
+            <h3>Creative Design</h3>
+            <p>
+              Web design is a similar process of creation, with the intention
+              of presenting...
+            </p>
+          </div>
+          <div class="services__item">
+            <svg class="icon-color" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 640 512">
+              <path
+                d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z" />
+            </svg>
+            <h3>Web Development</h3>
+            <p>
+              Web design is a similar process of creation, with the intention
+              of presenting...
+            </p>
+          </div>
+          <div class="services__item">
+            <svg class="icon-color" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+              <path
+                d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376V479.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z" />
+            </svg>
+            <h3>Brand Identity</h3>
+            <p>
+              Web design is a similar process of creation, with the intention
+              of presenting...
+            </p>
+          </div>
+          <div class="services__item">
+            <svg class="icon-color" width="24" height="24" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+              <title />
+              <path
+                d="M126,94H115.67a5.94,5.94,0,0,0,.33-1.94V27.94A6,6,0,0,0,110.06,22H17.94A6,6,0,0,0,12,27.94V92.06A5.94,5.94,0,0,0,12.33,94H2a2,2,0,0,0-2,2v.5C0,101,3.64,106,8.5,106h111c4.86,0,8.5-5,8.5-9.5V96A2,2,0,0,0,126,94ZM16,92.06V27.94A1.94,1.94,0,0,1,17.94,26h92.12A1.94,1.94,0,0,1,112,27.94V92.06A1.94,1.94,0,0,1,110.06,94H17.94A1.94,1.94,0,0,1,16,92.06ZM119.5,102H8.5c-1.95,0-3.67-2-4.27-4H123.77C123.17,100.05,121.45,102,119.5,102Z" />
+              <path
+                d="M76.49,62.17c-2.6-1.06-4.19-1.8-4.38-3.12a2.43,2.43,0,0,1,1.12-2.35c1.31-.94,3.92-1.33,7.3.39a2,2,0,1,0,1.81-3.56c-4.22-2.15-8.5-2.18-11.44-.09a6.41,6.41,0,0,0-2.75,6.17c.52,3.7,4,5.12,6.84,6.26,3.48,1.42,5,2.26,5,4.39a3.72,3.72,0,0,1-2,2.59c-1.23.72-3.9,1.58-8-.74a2,2,0,1,0-2,3.48,14.18,14.18,0,0,0,7,2,9.93,9.93,0,0,0,5-1.33,7.45,7.45,0,0,0,4-6C84,65.22,79.66,63.45,76.49,62.17Z" />
+              <path
+                d="M54,42H46a2,2,0,0,0-2,2V75a2,2,0,0,0,4,0V65h6c7.18,0,12-4.42,12-11A11.74,11.74,0,0,0,54,42Zm0,19H48V46h6a7.73,7.73,0,0,1,8,8C62,58.38,59,61,54,61Z" />
+            </svg>
+            <h3>Adobe Illustrator</h3>
+            <p>
+              Web design is a similar process of creation, with the intention
+              of presenting...
+            </p>
+          </div>
+          <div class="services__item">
+            <svg class="icon-color" width="24" height="24" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+              <title />
+              <path
+                d="M126,94H115.67a5.94,5.94,0,0,0,.33-1.94V27.94A6,6,0,0,0,110.06,22H17.94A6,6,0,0,0,12,27.94V92.06A5.94,5.94,0,0,0,12.33,94H2a2,2,0,0,0-2,2v.5C0,101,3.64,106,8.5,106h111c4.86,0,8.5-5,8.5-9.5V96A2,2,0,0,0,126,94ZM16,92.06V27.94A1.94,1.94,0,0,1,17.94,26h92.12A1.94,1.94,0,0,1,112,27.94V92.06A1.94,1.94,0,0,1,110.06,94H17.94A1.94,1.94,0,0,1,16,92.06ZM119.5,102H8.5c-1.95,0-3.67-2-4.27-4H123.77C123.17,100.05,121.45,102,119.5,102Z" />
+              <path
+                d="M76.49,62.17c-2.6-1.06-4.19-1.8-4.38-3.12a2.43,2.43,0,0,1,1.12-2.35c1.31-.94,3.92-1.33,7.3.39a2,2,0,1,0,1.81-3.56c-4.22-2.15-8.5-2.18-11.44-.09a6.41,6.41,0,0,0-2.75,6.17c.52,3.7,4,5.12,6.84,6.26,3.48,1.42,5,2.26,5,4.39a3.72,3.72,0,0,1-2,2.59c-1.23.72-3.9,1.58-8-.74a2,2,0,1,0-2,3.48,14.18,14.18,0,0,0,7,2,9.93,9.93,0,0,0,5-1.33,7.45,7.45,0,0,0,4-6C84,65.22,79.66,63.45,76.49,62.17Z" />
+              <path
+                d="M54,42H46a2,2,0,0,0-2,2V75a2,2,0,0,0,4,0V65h6c7.18,0,12-4.42,12-11A11.74,11.74,0,0,0,54,42Zm0,19H48V46h6a7.73,7.73,0,0,1,8,8C62,58.38,59,61,54,61Z" />
+            </svg>
+            <h3>Adobe Illustrator</h3>
+            <p>
+              Web design is a similar process of creation, with the intention
+              of presenting...
+            </p>
+          </div>
+          <div class="services__item">
+            <svg class="icon-color" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512">
+              <path
+                d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+            </svg>
+            <h3>Social Media</h3>
+            <p>
+              Web design is a similar process of creation, with the intention
+              of presenting..
+            </p>
+          </div>
+          <p class="services__contact">Estas interesado en trabajar conmigo ?
+            <a href="#contact"><strong>Contáctame</strong></a>
+          </p>
+        </div>
+
+
+      </section>
+
+      <section id="portfolio">
+        <div class="portfolio__title title-section">
+          <span>Portfolio</span>
+          <h2>Featured Works</h2>
+        </div>
+
+        <div class="portfolio__container">
+          <div class="portfolio__item">
+            <img src="https://loremflickr.com/320/240?random=1" />
+          </div>
+          <div class="portfolio__item">
+            <img src="https://loremflickr.com/320/240?random=2" />
+          </div>
+          <div class="portfolio__item">
+            <img src="https://loremflickr.com/320/240?random=3" />
+          </div>
+          <div class="portfolio__item">
+            <img src="https://loremflickr.com/320/240?random=2" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="contact">
+      <div class="contact__title title-section contact">
+        <span>contact</span>
+        <h2>Get in Touch</h2>
+        <div class="contact__text">
+          <p>
+            Please fill out the form on this section to contact with me. Or
+            call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday
+          </p>
+        </div>
+        <form class="contact__form">
+          <input type="text" id="contact__name" placeholder="Name" />
+          <br />
+          <br />
+          <input type="email" placeholder="Email" id="contact__email" />
+          <br />
+          <br />
+          <textarea placeholder="Message" name="message" id="contact__message" cols="30" rows="10"></textarea>
+          <br />
+          <br />
+          <input class="contact__btn" type="submit" value="Send Message" />
+        </form>
       </div>
-    </footer>
-  </body>
+
+      <div class="contact__location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.023167013785!2d-71.23510582364324!3d-29.921235225575366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691cb64a86262f9%3A0x4e4fde0d7ecbacf!2sRa%C3%BAl%20Salamanca%20Jorquera%201650%2C%20La%20Serena%2C%20Coquimbo!5e0!3m2!1ses!2scl!4v1690402518187!5m2!1ses!2scl"
+          width="320" height="350" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <p>© Copyright 2019-2021. All rights are reserved.</p>
+
+    <div class="footer__social-media">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          style="fill: rgba(255, 254, 254, 1)">
+          <circle cx="4.983" cy="5.009" r="2.188"></circle>
+          <path
+            d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z">
+          </path>
+        </svg>
+      </a>
+
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          style="fill: rgba(255, 254, 254, 1)">
+          <path
+            d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+          </path>
+        </svg>
+      </a>
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          style="fill: rgba(255, 254, 254, 1)">
+          <path
+            d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z">
+          </path>
+          <circle cx="11.994" cy="11.979" r="3.003"></circle>
+        </svg>
+      </a>
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          style="fill: rgba(255, 254, 254, 1)">
+          <path
+            d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+
+
+
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

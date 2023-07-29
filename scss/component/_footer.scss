@@ -1,4 +1,18 @@
 @use "../var/colors" as c;
-footer{
-  background-color: map-get(c.$colors , primary);
+#footer{
+  width: 100%;
+  height: 25rem;
+  background-color: map-get(c.$colors , colorTitle);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p{
+    color: map-get(c.$colors , colorWhite);
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    word-wrap: break-word;
+    padding: 1rem;
+  }
 }
