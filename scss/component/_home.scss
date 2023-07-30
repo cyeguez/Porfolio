@@ -60,6 +60,10 @@
     }
   }
   .home__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
     a {
       font-size: 3.5rem;

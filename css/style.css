@@ -187,6 +187,10 @@ header .header__container .active-menu {
   font-family: "Poppins", sans-serif;
 }
 #home .home__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: auto;
 }
 #home .home__button a {
@@ -239,6 +243,7 @@ header .header__container .active-menu {
   height: 350px;
   background-color: white;
   padding: 3rem 1.6rem 1.6rem 1.6rem;
+  box-shadow: -13px 13px 30px #e8e8e8, 13px -13px 30px #ffffff;
 }
 #services .services__container .services__item svg {
   width: 30px;
@@ -315,11 +320,23 @@ header .header__container .active-menu {
   background-color: #fa5b0f;
   font-family: "Poppins", sans-serif;
   margin-bottom: 10rem;
+  position: relative;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+}
+#about .btn:hover {
+  letter-spacing: 0.25em;
+  background-color: #333;
+  box-shadow: 0 0 40px #fa5b0f;
 }
 #about .btn a {
   color: white;
   font-size: 2rem;
   font-weight: 600;
+}
+#about .btn a:hover {
+  color: #fa5b0f;
 }
 
 #portfolio {

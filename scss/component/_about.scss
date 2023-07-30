@@ -51,6 +51,20 @@
     background-color: map-get(c.$colors, colorResalt);
     font-family: 'Poppins', sans-serif;
     margin-bottom: 10rem;
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+
+   
+    
+    &:hover{
+      letter-spacing: 0.25em;
+      background-color:  map-get(c.$colors, colorText);
+      box-shadow: 0 0 40px (map-get(c.$colors, colorResalt));
+    }
+
+
     
     a{
       color: map-get(c.$colors, colorWhite);
@@ -58,6 +72,9 @@
       font-weight: 600;
     }
     
+    a:hover{
+      color: map-get(c.$colors, colorResalt);
+    }
 
   }
 }
